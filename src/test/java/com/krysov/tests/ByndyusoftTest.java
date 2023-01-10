@@ -1,6 +1,7 @@
 package com.krysov.tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.selector.ByText;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -8,12 +9,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class ByndyusoftTest {
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.timeout = 10000;
-    }
+public class ByndyusoftTest extends com.krysov.tests.TestBase {
+
     @Test
     void calculatorTest(){
         step("Открываем главную страницу", () -> {
@@ -55,6 +52,29 @@ public class ByndyusoftTest {
         step("Проверяем наличие результатов для путевой карты пользователя", () -> {
             $(".product-analysis__step", 1).shouldHave(text("Точки входа, точки выхода и переходы пользователей."));
         });
-        sleep(5000);
+    }
+    @Test
+    void checkReview1(){
+        step("Открываем главную страницу", () -> {
+            open("https://byndyusoft.com/");
+        });
+        step("Кликаем на Клиенты", () -> {
+            $(".header__nav-ls").$(new ByText("Клиенты")).click();
+        });
+        step("Проверяем наличие отзыва от Дениса Болигара", () -> {
+            $(".reviews__signature", 1).shouldHave(text("Денис Болигар"));
+        });
+    }
+    @Test
+    void checkReview2(){
+        step("Открываем главную страницу", () -> {
+            open("https://byndyusoft.com/");
+        });
+        step("Кликаем на Клиенты", () -> {
+            $(".header__nav-ls").$(new ByText("Клиенты")).click();
+        });
+        step("Проверяем наличие отзыва от Александра Круглова", () -> {
+            $(".reviews__signature", 2).shouldHave(text("Александр Круглов"));
+        });
     }
 }
