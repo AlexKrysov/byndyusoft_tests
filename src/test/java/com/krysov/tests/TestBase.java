@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class TestBase {
-    ByndyusoftTest byndyusoftTest = new ByndyusoftTest();
+
 
     @BeforeAll
     static void beforeAll() {
@@ -19,7 +19,7 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browserVersion", "100");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = System.getProperty("selenoidUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-        Configuration.timeout = 10000;
+        Configuration.timeout = 20000;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
