@@ -60,3 +60,16 @@
 <p align="center">
 <a href="https://jenkins.autotests.cloud/job/byndyusoft_tests/"><img src="images/screens/jenkins.png" alt="jenkins"/></a>
 </p>
+
+### 🧙: Параметры сборки в Jenkins:
+
+:yum: BROWSER (браузер, по умолчанию chrome)
+
+:zany_face: BROWSER_VERSION (версия браузера, по умолчанию 100.0)
+
+:smirk: BROWSER_SIZE (размер окна браузера, по умолчанию 1920x1080)
+
+:relieved: SELENOID_URL (выбор url для теста)
+
+:woozy_face: VIDEO_URL (выбор url для видео)
+
