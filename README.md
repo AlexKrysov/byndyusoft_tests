@@ -73,3 +73,42 @@
 
 :woozy_face: VIDEO_URL (выбор url для видео)
 
+## 🏗️: Для запуска тестов из терминала необходимо заполнить junit-platform.properties или передать значение:
+
+:one: URL - (выбор url)
+
+:two: BROWSER - (выбор браузера)
+
+:three: BROWSERSIZE - (выбор размера окна браузера)
+
+:four: VERSION - (выбор версии браузера)
+
+:five: REMOTE_DRIVER_URL - (выбор удалённого драйвера)
+
+:seven: ALLURE_NOTIFICATIONS_VERSION - (выбор версии allure)
+
+## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/08-alexlis-web/32/allure/">Allure report</a>
+
+## ⛅: Overview
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screens/allureReport.png">
+</p>
+
+
+
+## 💹: Graphs
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screens/graphs.png">
+</p>
+
+## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Интеграция уведомлений с <a target="_blank" href="https://t.me/c/1864674022/9">Telegram</a>
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screens/telegram.png" >
+</p>
+
+
+
+
+## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Allure"/></a> Запись видео из Selenoid при прохождении автотеста:
+![Test](images/mp4/123.mp4)
